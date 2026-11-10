@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "ScanIA",
+    "slug": "scania",
+    "scheme": "scania",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "plugins": [
+      "expo-router",
+      "expo-status-bar",
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "O ScanIA usa a câmera para fotografar suas notas fiscais.",
+          "photosPermission": "O ScanIA acessa suas fotos para ler notas fiscais salvas na galeria."
+        }
+      ]
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.karinarm.scania"
+    },
+    "android": {
+      "package": "com.karinarm.scania",
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
